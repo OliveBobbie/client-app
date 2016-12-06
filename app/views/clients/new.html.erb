@@ -1,0 +1,13 @@
+<%= form_tag("/clients", method: "post") do %>
+	<%= label_tag(:name, "name") %>
+	<%= text_field_tag(:name) %>
+
+	<%= label_tag(:age, "age") %>
+	<%= text_field_tag(:age) %>
+
+	<%= label_tag(:phone_number, "phone_number") %>
+	<%= text_field_tag(:phone_number) %>
+
+	<%= submit_tag("Submit") %>
+
+<% end %>

@@ -1,0 +1,9 @@
+<div>
+	<% @clients.each do |client| %>
+		---------------------------<br>
+		<%= client.name %><br>
+		<%= client.age %><br>
+		<%= client.phone_number %><br>
+		<%= link_to('Delete', "/client/#{client.id}", method: :delete) %><br>
+	<% end %>
+</div>
